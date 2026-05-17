@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noman's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            min-height: 100vh;
+        }
+
+        body {
+            background-color: rgb(12, 13, 15);
+            color: rgb(219, 217, 215);
+            font-family: 'Poppins', sans-serif;
+            min-height: 70vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(110, 88, 88);
+            padding: 0 32px;
+        }
+
+        .brand {
+            font-size: 15px;
+            font-weight: 600;
+            color: rgb(217, 210, 200);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        nav ul li {
+            font-size: 13px;
+            cursor: pointer;
+            color: rgb(245, 236, 236);
+        }
+
+        nav ul li:hover {
+            color: rgb(209, 132, 132);
+        }
+
+        .first {
+            display: flex;
+            padding: 18px 24px;
+            gap: 24px;
+        }
+
+        .leftSection {
+            width: 30%;
+            height: 50px 0;
+            padding: 10px 14px;
+            font: size 40px;
+            font-weight: 100%;
+            color: white;
+            border-radius: 2px;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.3rem;
+        }
+
+        .rightSection {
+            width: 40%;
+            padding: 10px 14px;
+            font-size: 60px;
+            font-weight: 700%;
+            color: white;
+            border-radius: 2px;
+            margin-left: auto;
+        }
+
+        /* ── 4-line experience box ── */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-top: 32px;
+            border: 1px solid rgb(75, 75, 120);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .experience-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 0 24px;
+            height: 93px;
+            border-bottom: 1px solid rgb(75, 75, 120);
+            border-right: 1px solid rgb(75, 75, 120);
+        }
+
+        .experience-item:nth-child(2n) {
+            border-right: none;
+        }
+
+        .experience-item:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+
+        .exp-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgb(75, 75, 120);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        .exp-info h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 2px;
+        }
+
+        .exp-info p {
+            font-size: 0.75rem;
+            color: rgb(160, 155, 150);
+            font-weight: 300;
+        }
+
+
+        .footer {
+            display: flexffff;
+        }
+
+        footer {
+            height: 233px;
+            padding: 35px 233px;
+            justify-content: space-between;
+        }
+
+        .footer {
+            list-style: none;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand">Noman's Portfolio</div>
+            <ul>
+                <a href="\">
+                    <li>Home</li>
+                </a>
+                <a href="\">
+                    <li>About</li>
+                </a>
+                <a href="\">
+                    <li>Services</li>
+                </a>
+                <a href="\">
+                    <li>Projects</li>
+                </a>
+                <a href="\">
+                    <li>Contact Me</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">
+                hey! my name is <span class="purple">noman</span> and i am at
+                beginner level of web development
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="" width="60%" style="margin: 40px;">
+            </div>
+        </section>
+
+        <hr style="border: 0; background: rgb(75, 75, 120); height: 2px; margin: 10px 18px;">
+
+        <section class="secondSection">
+            <span class="text-gray">what i done so far</span>
+            <h1>work experience</h1>
+
+            <div class="experience-grid">
+
+                <div class="experience-item">
+                    <div class="exp-icon">💻</div>
+                    <div class="exp-info">
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS & JavaScript projects</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">🎨</div>
+                    <div class="exp-info">
+                        <h3>Graphic Design</h3>
+                        <p>Logo & poster design work</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">🖼️</div>
+                    <div class="exp-info">
+                        <h3>Web Design</h3>
+                        <p>UI layouts & visual styling</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">🎮</div>
+                    <div class="exp-info">
+                        <h3>Game Development</h3>
+                        <p>Exploring game mechanics & engines</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">📐</div>
+                    <div class="exp-info">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first & adaptive layouts</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">⚙️</div>
+                    <div class="exp-info">
+                        <h3>Tools & Workflow</h3>
+                        <p>VS Code, Git & browser dev tools</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">📚</div>
+                    <div class="exp-info">
+                        <h3>Learning</h3>
+                        <p>Continuously growing skill set</p>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-icon">🚀</div>
+                    <div class="exp-info">
+                        <h3>Projects</h3>
+                        <p>Personal & practice builds</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-first">
+            <h3>Noman's developer portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>home</li>
+                <li>bout</li>
+                <li>servces</li>
+                <li>contact</li>
+        </div>
+        </ul>
+        </div>
+        <div class="footer-righs">
+            www.nomansportfolio.com | all rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'graphic designer', 'web designer', 'interested in game development'],
+            typeSpeed: 50,
+
+        });
+    </script>
+</body>
+
+</html>
